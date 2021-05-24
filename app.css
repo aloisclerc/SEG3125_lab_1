@@ -1,0 +1,46 @@
+body {
+    
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    background-color: #daedfd;
+}
+div {
+    padding: 1%;
+    
+}
+
+input[type='radio'] { 
+    transform: scale(1.5); 
+}
+input[type='checkbox'] { 
+    transform: scale(1.5); 
+}
+
+input[type='text'] { 
+    transform: scale(1.25); 
+}
+
+textarea { 
+    transform: scale(1.25); 
+}
+
+#submit {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 15%;
+}
+
+#form {
+    background-color: #f1f8fc;
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 25px;
+}
+
+.likert {
+    margin-right: 1%;
+}
