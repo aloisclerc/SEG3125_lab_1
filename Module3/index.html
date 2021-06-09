@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+
+  <h1>Pierre's Grocery</h1>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Diet</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Groceries</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Dietary Information</h3>
+  <p>Tell us a bit about you.</p>
+	I would like my suggested groceries to be:
+  <form id="dietSelect" onchange="populateListProductChoices(this.id,'displayProduct')">
+    <label>
+      <input type='checkbox' id="Vegetarian" name="Vegetarian">   Vegetarian  
+    </label>
+    <label>
+      <input type='checkbox' id="GlutenFree" name="GlutenFree" > Gluten Free
+    </label>
+    <label>
+      <input type='checkbox' id="LactoseIntolerant" name="LactoseIntolerant" > Lactose Free
+    </label>
+    <label>
+      <input type='checkbox' id="NutAllergy" name="NutAllergy"> Nut Free
+    </label>
+    <label>
+      <input type='checkbox' id="Organic" name="Organic"> Organic
+    </label>
+  </form>
+
+
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted groceries</h3>
+  <p>We preselected groceries based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+<footer>Website designed by Alois Clerc</footer>
+</html>
