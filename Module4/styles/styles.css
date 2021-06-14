@@ -1,0 +1,69 @@
+td{
+    font-size: 25px;
+}
+
+.table {
+    background-color: #fff !important;
+    
+}
+p{
+    font-size: 20px;
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about {
+    background-color: #fff;
+}
+
+.meet {
+    background-color: #fff;
+}
+
+body {
+    background: #fafafa;
+    font-family: 'Lato', sans-serif;
+}
+
+.jumbotron {
+    color: #fff;
+    background: url(../images/dogsandcats.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    padding: 16% 0px 16% 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 300;
+}
+@media (max-width: 500px) {
+    .title { font-size: 50px; }
+}
+.tab {
+    background: #5c5d6b;
+    opacity: 0.9;
+    padding: 4% 2% 4% 0;
+}
+
+.navbar {
+    background-color: rgba(255,255,255,1) !important;
+    font-size: 20px;
+    padding: 0px 0 0px 0 !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+}
+
+
+
+.navbar-brand {
+    max-height: 5.9%;
+    max-width: 5.9%;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}
